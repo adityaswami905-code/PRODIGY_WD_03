@@ -50,13 +50,13 @@ function checkWinner() {
             highlightWin(a,b,c);
             drawLine(i);
             updateScore(values[a]);
-            statusText.textContent = `🎉 Player ${values[a]} Wins!`;
+            statusText.textContent = ` Player ${values[a]} Wins!`;
             return;
         }
     }
 
     if (!values.includes("")) {
-        statusText.textContent = "🤝 It's a Draw!";
+        statusText.textContent = " It's a Draw!";
         gameActive = false;
     }
 }
